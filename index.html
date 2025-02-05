@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -128,6 +127,43 @@
         @keyframes confetti-fall {
             0% { transform: translateY(-100vh) rotate(0deg); }
             100% { transform: translateY(100vh) rotate(360deg); }
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .book-container {
+                width: 90vmin;
+                height: 70vmin;
+            }
+
+            .quote {
+                font-size: 1rem;
+            }
+
+            .birthday-message {
+                font-size: 1.2rem;
+                bottom: -60px;
+            }
+
+            .book-content {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .book-container {
+                width: 95vmin;
+                height: 80vmin;
+            }
+
+            .quote {
+                font-size: 0.9rem;
+            }
+
+            .birthday-message {
+                font-size: 1rem;
+                bottom: -50px;
+            }
         }
     </style>
 </head>
